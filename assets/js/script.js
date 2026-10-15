@@ -2,7 +2,7 @@ let datosPokemonGlobales = [];
 
 async function cargarDatosAPI() {
     try {
-        const respuesta = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+        const respuesta = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1025');
         const data = await respuesta.json();
         
         datosPokemonGlobales = data.results;
